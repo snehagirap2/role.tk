@@ -1,0 +1,39 @@
+---
+title: Belkirk College of Engineering
+timezone: UTC
+collections:
+  people:
+    title: People
+    output: true
+    permalink: "/about/:path/"
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+    permalink: "/projects/:path/"
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+short_title: Belkirk
+description: Belkirk Demo Site for Forestry.io
+baseurl: 
+permalink: "/:path/"
+jekyll-archives:
+  enabled: all
+  layout: archive
+gems:
+- jekyll-menus
+- jekyll-feed
+- jekyll-archives
